@@ -530,3 +530,40 @@ html.dark-mode textarea {
 .btn-submit:hover {
   background-color: #1d4ed8;
 }
+
+/* Styling Tombol Kirim Pesan Agar Besar & Proporsional */
+.btn-submit {
+    /* Ukuran dan Jarak (Ini yang membuatnya besar) */
+    width: 100%;             /* Mengikuti lebar form */
+    padding: 18px 25px;      /* Jarak vertikal (atas-bawah) dan horizontal */
+    
+    /* Font dan Warna */
+    background-color: #2563eb;  /* Warna biru modern (ganti jika punya warna lain) */
+    color: #ffffff;             /* Warna teks putih */
+    font-size: 18px;            /* Ukuran font yang agak besar */
+    font-weight: 700;           /* Tebal (Bold) */
+    text-align: center;         /* Teks di tengah */
+    
+    /* Tampilan Border dan Radius */
+    border: none;               /* Hapus garis tepi default */
+    border-radius: 12px;        /* Sudut yang melengkung (serasi) */
+    
+    /* Kursor dan Transisi */
+    cursor: pointer;            /* Berubah jadi tangan saat di-hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efek halus */
+    box-sizing: border-box;     /* Jaga padding tidak melebihi lebar */
+    
+    /* Jarak dari form di atasnya */
+    margin-top: 20px;
+}
+
+/* Efek saat kursor mouse di atas tombol (Hover) */
+.btn-submit:hover {
+    background-color: #1d4ed8;  /* Warna biru yang lebih gelap */
+    transform: translateY(-2px); /* Tombol sedikit naik (lebih interaktif) */
+}
+
+/* Efek saat tombol diklik (Active) */
+.btn-submit:active {
+    transform: translateY(1px); /* Tombol sedikit turun saat ditekan */
+}
