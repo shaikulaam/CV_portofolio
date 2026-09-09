@@ -532,37 +532,32 @@ html.dark-mode textarea {
 }
 
 /* Styling Tombol Kirim Pesan Agar Besar & Proporsional */
+/* Styling Tombol Kirim Pesan Agar Besar & Proporsional (Dipaksa) */
 .btn-submit {
-    /* Ukuran dan Jarak (Ini yang membuatnya besar) */
-    width: 100%;             /* Mengikuti lebar form */
-    padding: 18px 25px;      /* Jarak vertikal (atas-bawah) dan horizontal */
+    width: 100% !important;
+    padding: 18px 25px !important;  /* PAKSA TINGGI JADI BESAR */
     
-    /* Font dan Warna */
-    background-color: #2563eb;  /* Warna biru modern (ganti jika punya warna lain) */
-    color: #ffffff;             /* Warna teks putih */
-    font-size: 18px;            /* Ukuran font yang agak besar */
-    font-weight: 700;           /* Tebal (Bold) */
-    text-align: center;         /* Teks di tengah */
+    background-color: #2563eb !important; /* PAKSA WARNA JADI SOLID */
+    color: #ffffff !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    text-align: center !important;
     
-    /* Tampilan Border dan Radius */
-    border: none;               /* Hapus garis tepi default */
-    border-radius: 12px;        /* Sudut yang melengkung (serasi) */
+    border: none !important;
+    border-radius: 12px !important;
     
-    /* Kursor dan Transisi */
-    cursor: pointer;            /* Berubah jadi tangan saat di-hover */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Efek halus */
-    box-sizing: border-box;     /* Jaga padding tidak melebihi lebar */
-    
-    /* Jarak dari form di atasnya */
-    margin-top: 20px;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease, transform 0.2s ease !important;
+    box-sizing: border-box !important;
+    margin-top: 20px !important;
+    display: block !important; /* Pastikan dia solid, bukan inline */
 }
 
-/* Efek saat kursor mouse di atas tombol (Hover) */
+/* Hover effect tetap sama */
 .btn-submit:hover {
-    background-color: #1d4ed8;  /* Warna biru yang lebih gelap */
-    transform: translateY(-2px); /* Tombol sedikit naik (lebih interaktif) */
+    background-color: #1d4ed8 !important;
+    transform: translateY(-2px) !important;
 }
-
 /* Efek saat tombol diklik (Active) */
 .btn-submit:active {
     transform: translateY(1px); /* Tombol sedikit turun saat ditekan */
